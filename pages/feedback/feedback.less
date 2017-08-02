@@ -1,0 +1,130 @@
+
+@color: #3c4856;
+
+/*feedback style*/
+.feedbackpage {
+  padding: 0;
+  font-size: 28rpx;
+  color: @color;
+}
+
+
+.feedbackheader {
+  width: 100%;
+  color: #8b97a4;
+  background-color: #edf0f3;
+  .header-paragraph {
+    display: flex;
+    align-items: center;
+    padding: 40rpx 30rpx 20rpx 30rpx;
+  }
+  .header-label {
+    width: 6rpx;
+    height: 26rpx;
+    margin-right: 24rpx;
+    background-color: #22dd82;
+  }
+}
+
+.feedbackissue {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30rpx;
+  .issue-title {
+    display: flex;
+    margin-bottom: 20rpx;
+  }
+  .issue-icon {
+    display:flex;
+    align-items:center;
+    margin-left:8rpx;
+    color:#ff9b9b;
+  }
+  .issue-icon text{
+    height:16rpx;
+    display:flex;
+  }
+  .issue-detail {
+    width:100%;
+    padding:22rpx 30rpx;
+    border:1px solid #e5ebf1;
+    background-color:#f6f8f9;
+  }
+}
+
+.relatedscreenshots {
+  width: 720rpx;
+  margin-left: 30rpx;
+  padding-top: 30rpx;
+  border-top: 1px solid #edf0f3;
+  .image-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 40rpx;
+  }
+  .image-add, image {
+    width:162rpx;
+    height:162rpx;
+  }
+  .image-box {
+    position: relative;
+    margin-right: 30rpx;
+  }
+  .image-add {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: inherit;
+    color: #8b97a4;
+    font-size: 48rpx;
+    border:1px solid #e5ebf1;
+  }
+  .image-delete {
+    position: absolute;
+    right: -20rpx;
+    top: -20rpx;
+    background-color: #fff;
+    border-radius: 40rpx;
+  }
+}
+
+.wechatnumber {
+  width: 690rpx;
+  margin: 30rpx 0 0 30rpx;
+  padding: 30rpx 30rpx 30rpx 0;
+  border-top: 1px solid #edf0f3;
+  input {
+    margin-top: 40rpx;
+    padding: 30rpx;
+    border:1px solid #e5ebf1;
+    background-color:#f6f8f9;
+  }
+}
+
+.systeminfo {
+  width: 690rpx;
+  margin-left: 30rpx;
+  padding: 30rpx 30rpx 0 0;
+  border-top: 1px solid #edf0f3;
+  .info-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40rpx;
+    text {
+      margin: 0 30rpx 30rpx 0;
+      padding: 16rpx;
+      color: #8b97a4;
+      border: 1px solid #d9e1e9;
+      border-radius: 32rpx;
+    }
+  }
+}
+
+.submitbtn {
+  padding: 30rpx;
+  background-color: #edf0f3;
+  button {
+    background-color: #32db85;
+  }
+}

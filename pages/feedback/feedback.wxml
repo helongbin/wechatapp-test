@@ -1,0 +1,46 @@
+<scroll-view scroll-y="true" class="container feedbackpage">
+    <view class="feedbackheader">
+        <view class="header-paragraph">
+            <text class="header-label"></text>
+            <text class="header-text">请填写以下信息</text>
+        </view>
+    </view>
+    <view class="feedbackissue">
+        <view class="issue-title">
+            <text>遇到的问题</text>
+            <text class="issue-icon"><text>*</text></text>
+        </view>
+        <view class="issue-detail">
+            <textarea name="issue" maxlength="140" placeholder="至多输入140字"></textarea>
+        </view>
+    </view>
+    <view class="relatedscreenshots">
+        <text>相关截图</text>
+        <view class="image-list">
+            <view class="image-box" wx:for="{{imageList}}" wx:key="{{item.path}}" >
+                <image src="{{item.path}}"></image>
+                <icon class="image-delete" data-path="{{item.path}}" bindtap="deleteImage" type="clear"
+                      color="#ff7474" size="20"></icon>
+            </view>
+            <button wx:if="{{imageList.length < 3}}" bindtap="addImage" class="image-add" plain="true">+</button>
+        </view>
+    </view>
+    <view class="wechatnumber">
+        <text>微信号</text>
+        <input type="text" placeholder="方便我们联系您" placeholder-style="color:#8b97a4;"></input>
+    </view>
+    <view class="systeminfo">
+        <text>系统信息</text>
+        <view class="info-list">
+            <text>{{systemInfo.model}}</text>
+            <text>{{systemInfo.system}}</text>
+            <text>{{systemInfo.version}}</text>
+            <text>{{systemInfo.networkType}}</text>
+            <text>{{systemInfo.language}}</text>
+            <text>{{systemInfo.resolution}}</text>
+        </view>
+    </view>
+    <view class="submitbtn">
+        <button type="primary">提交</button>
+    </view>
+</scroll-view>
